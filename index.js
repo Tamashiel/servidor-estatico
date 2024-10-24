@@ -34,4 +34,4 @@ createServer((peticion,respuesta) => { //peticion --> flujo de lectura | respues
         //servirFichero(respuesta,"/404.html",contentType("html"), 404);
     }
     
-}).listen(4000); 
+}).listen(process.env.PORT || 4000); 
